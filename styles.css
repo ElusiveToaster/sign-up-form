@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    margin: 0;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+    height: 100vh;
+    width: 75vw;
+}
+
+.logo-section {
+    background: url("parrot.avif");
+    height: 100vh;
+    width: 25vw;
+}
+
+img {
+    position: absolute;
+    max-width: 150px;
+    top: 2vh;
+
+    z-index: 1;
+}
+
+.test {
+    margin-top: 13vh;
+    position: relative;
+}
+
+.logo-background {
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 25vw;
+    height: 20vh;
+    position: absolute;
+
+    top: 0;
+}
+
+fieldset {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 3px 5px rgb(189, 189, 189);
+    position: relative;
+    padding: 40px 0 0 10px;
+    height: 25vh;
+    margin: 0;
+    border: none;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em 25px 2em;
+}
+
+input {
+    border: 2px rgb(204, 204, 204) solid;
+    border-radius: 0.3em;
+    height: 20px;
+
+}
+
+input + span {
+    position: relative;
+}
+
+input:invalid + span::after{
+    position: absolute;
+    color: red;
+    content: "X";
+    right: 5px;
+    top: -21px;
+}
+
+legend {
+    position: absolute;
+    top: 8px;
+    left: 40px;
+}
+
+input[type="button"] {
+    margin: 25px 0 0 50px;
+    height: 50px;
+    width: 220px;
+    
+    background-color: rgb(25, 90, 25);
+    color: white;
+    border: none;
+    border-radius: 0.6em;
+}
