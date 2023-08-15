@@ -92,4 +92,18 @@ input[type="button"] {
     color: white;
     border: none;
     border-radius: 0.6em;
+
+    font-weight: bold;
+}
+
+input:focus {
+    border: 2px rgb(78, 140, 255) solid;
+    outline: none;
+    box-shadow: 0 3px 5px rgb(189, 189, 189);
+}
+
+input:focus[type="button"] {
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
