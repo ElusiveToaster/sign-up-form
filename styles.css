@@ -1,6 +1,9 @@
+
+
 body {
     display: flex;
     margin: 0;
+    
 }
 
 .sign-up {
@@ -9,13 +12,23 @@ body {
     justify-content: center;
     background-color: rgb(236, 236, 236);
     height: 100vh;
-    width: 75vw;
+    width: 65vw;
+}
+
+.sign-up-title {
+    width: 40vw;
+    margin: 0 0 10vh 40px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
 }
 
 .logo-section {
     background: url("parrot.avif");
+    background-size: 35vw 100vh;
     height: 100vh;
-    width: 25vw;
+    width: 35vw;
 }
 
 img {
@@ -33,7 +46,7 @@ img {
 
 .logo-background {
     background-color: rgba(0, 0, 0, 0.466);
-    width: 25vw;
+    width: 35vw;
     height: 20vh;
     position: absolute;
 
@@ -46,8 +59,8 @@ fieldset {
     background-color: white;
     box-shadow: 0 3px 5px rgb(189, 189, 189);
     position: relative;
-    padding: 40px 0 0 10px;
-    height: 25vh;
+    padding: 30px 0 0 6px;
+    height: 350px;
     margin: 0;
     border: none;
 }
@@ -56,12 +69,15 @@ label {
     display: flex;
     flex-direction: column;
     margin: 0 1em 25px 2em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 input {
     border: 2px rgb(204, 204, 204) solid;
     border-radius: 0.3em;
-    height: 20px;
+    height: 25px;
+    width: 30vh;
 
 }
 
@@ -69,22 +85,38 @@ input + span {
     position: relative;
 }
 
-input:invalid + span::after{
+form input:focus {
+    border: 2px rgb(78, 140, 255) solid;
+    outline: none;
+    box-shadow: 0 3px 5px rgb(189, 189, 189);
+}
+
+/*
+form.submitted input:invalid + span::after{
     position: absolute;
     color: red;
     content: "X";
     right: 5px;
     top: -21px;
 }
+*/
+
+form.submitted input:invalid{
+    border-color: red;
+    box-shadow: 0 3px 5px rgba(236, 24, 24, 0.295);
+}
 
 legend {
     position: absolute;
     top: 8px;
     left: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
 }
 
-input[type="button"] {
-    margin: 25px 0 0 50px;
+input[type="submit"] {
+    margin: 35px 0 0 70px;
     height: 50px;
     width: 220px;
     
@@ -93,17 +125,19 @@ input[type="button"] {
     border: none;
     border-radius: 0.6em;
 
-    font-weight: bold;
-}
-
-input:focus {
-    border: 2px rgb(78, 140, 255) solid;
-    outline: none;
-    box-shadow: 0 3px 5px rgb(189, 189, 189);
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 input:focus[type="button"] {
     border: none;
     outline: none;
     box-shadow: none;
+}
+
+.log-in {
+    margin: 25px 0 0 70px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
