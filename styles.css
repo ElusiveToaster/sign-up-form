@@ -1,4 +1,11 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('norse-bold-webfont.woff2') format('woff2'),
+         url('norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 body {
     display: flex;
@@ -32,11 +39,20 @@ body {
 }
 
 img {
-    position: absolute;
-    max-width: 150px;
-    top: 2vh;
+    max-width: 130px;
 
     z-index: 1;
+}
+
+.logo-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: norsebold;
+    font-size: 65px;
+
 }
 
 .test {
